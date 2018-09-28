@@ -1,0 +1,72 @@
+
+Changed the current scope context to 172.18.10.0 scope.
+
+Dhcp Server \\SAIGON.cybersoft.vn add scope 172.18.10.0 255.255.255.128 "Specical1" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set state 1
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set delayoffer 0
+
+   # ======================================================================
+   #  Start Add Ipranges to the Scope 172.18.10.0, Server SAIGON.cybersoft.vn                  
+   # ======================================================================
+
+
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add iprange 172.18.10.1 172.18.10.125 
+Dhcp Server \\SAIGON.cybersoft.vn scope 172.18.10.0 set napstate Off
+
+   # ======================================================================
+   #  End   Add Ipranges to the Scope 172.18.10.0, Server SAIGON.cybersoft.vn                  
+   # ======================================================================
+
+
+   # ======================================================================
+   #  Start Add Excluderanges to the Scope : 172.18.10.0, Server : SAIGON.cybersoft.vn         
+   # ======================================================================
+
+
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 add excluderange 172.18.10.63 172.18.10.125
+
+   # ======================================================================
+   #  End   Add Excluderanges to the Scope : 172.18.10.0, Server : SAIGON.cybersoft.vn         
+   # ======================================================================
+
+
+   # ======================================================================
+   #  Start Add OptionValues to the Scope : 172.18.10.0, Server : SAIGON.cybersoft.vn          
+   # ======================================================================
+
+
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set optionvalue 6 IPADDRESS "172.17.1.20" "172.17.1.21" 
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set optionvalue 51 DWORD "86400" 
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set optionvalue 3 IPADDRESS "172.18.10.126" 
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set optionvalue 44 IPADDRESS "172.17.1.20" "172.17.1.21" 
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set optionvalue 15 STRING "cybersoft.vn" 
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 set optionvalue 46 BYTE "8" 
+
+   # ======================================================================
+   #  End   Add OptionValues to the Scope : 172.18.10.0, Server : SAIGON.cybersoft.vn          
+   # ======================================================================
+
+
+   # ======================================================================
+   #  Start Add ReservedIp to the Scope : 172.18.10.0, Server : SAIGON.cybersoft.vn            
+   # ======================================================================
+
+
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.93 001a9282e81a "MDG0789.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.38 6c8814a89180 "tuanhoang1986.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.72 3c970ea705c8 "tuanhoang1986.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.71 e82aea50fd7f "hanguyen2271.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.15 f4b7e2645be1 "hoanhle1964.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.19 64eb8cbeeaa0 "PROJECTOR_1.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.31 605718f0a4ce "bacnguyen2525.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.41 507b9deb60fd "trinhto3049.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.67 448500ab56c1 "handinh3058.cybersoft.vn" "" ""
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.43 485d603de22f "chingo.cybersoft.vn" "" "BOTH"
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.49 a088b413734c "LUYENHUYNH1400.cybersoft.vn" "" "BOTH"
+Dhcp Server \\SAIGON.cybersoft.vn v4 Scope 172.18.10.0 Set NameProtection enable= 0
+Dhcp Server \\SAIGON.cybersoft.vn Scope 172.18.10.0 Set DnsConfig 1 1 1 0
+
+   # ======================================================================
+   #  End   Add ReservedIp to the Scope : 172.18.10.0, Server : SAIGON.cybersoft.vn            
+   # ======================================================================
+

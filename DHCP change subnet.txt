@@ -1,0 +1,6 @@
+netsh dhcp server \\SAIGON scope 172.18.10.0 dump > d:\saigon-172.18.10.0.txt
+netsh dhcp server \\PHUQUOC scope 172.18.10.0 dump > d:\phuquoc-172.18.10.0.txt
+
+
+netsh exec d:\saigon-172.18.10.0-edit.txt
+netsh exec d:\phuquoc-172.18.10.0-edit.txt

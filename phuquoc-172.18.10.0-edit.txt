@@ -1,0 +1,77 @@
+
+Changed the current scope context to 172.18.10.0 scope.
+
+Dhcp Server \\PHUQUOC.cybersoft.vn add scope 172.18.10.0 255.255.255.128 "Special1" "For BOM and Laptop users"
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set state 1
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set delayoffer 0
+
+   # ======================================================================
+   #  Start Add Ipranges to the Scope 172.18.10.0, Server PHUQUOC.cybersoft.vn                  
+   # ======================================================================
+
+
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add iprange 172.18.10.1 172.18.10.125 
+Dhcp Server \\PHUQUOC.cybersoft.vn scope 172.18.10.0 set napstate Off
+
+   # ======================================================================
+   #  End   Add Ipranges to the Scope 172.18.10.0, Server PHUQUOC.cybersoft.vn                  
+   # ======================================================================
+
+
+   # ======================================================================
+   #  Start Add Excluderanges to the Scope : 172.18.10.0, Server : PHUQUOC.cybersoft.vn         
+   # ======================================================================
+
+
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 add excluderange 172.18.10.1 172.18.10.62
+
+   # ======================================================================
+   #  End   Add Excluderanges to the Scope : 172.18.10.0, Server : PHUQUOC.cybersoft.vn         
+   # ======================================================================
+
+
+   # ======================================================================
+   #  Start Add OptionValues to the Scope : 172.18.10.0, Server : PHUQUOC.cybersoft.vn          
+   # ======================================================================
+
+
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set optionvalue 44 IPADDRESS "172.17.1.21" "172.17.1.20" 
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set optionvalue 51 DWORD "86400" 
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set optionvalue 3 IPADDRESS "172.18.10.126" 
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set optionvalue 6 IPADDRESS "172.17.1.21" "172.17.1.20" 
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set optionvalue 46 BYTE "8" 
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 set optionvalue 15 STRING "cybersoft.vn" 
+
+   # ======================================================================
+   #  End   Add OptionValues to the Scope : 172.18.10.0, Server : PHUQUOC.cybersoft.vn          
+   # ======================================================================
+
+
+   # ======================================================================
+   #  Start Add ReservedIp to the Scope : 172.18.10.0, Server : PHUQUOC.cybersoft.vn            
+   # ======================================================================
+
+
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.93 001a9282e81a "MDG0789.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.53 3c970eb819b2 "MDG2258.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.88 b86b23b8aa21 "lando2276.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.104 28d2447694aa "luctran2200.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.102 7c7a91b7d32e "luctran2200.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.72 3c970ea705c8 "tuanhoang1986.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.38 6c8814a89180 "tuanhoang1986.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.71 e82aea50fd7f "hanguyen2271.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.64 6c400893b32c "Quys-MBP.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.97 448500ab56cb "trinhto3049.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.91 685b35c727e5 "Sons-MBP.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.57 3052cb6f173f "tuyetnguyen2748.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.112 002170ed8f8e "thaovuong1036.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.67 448500ab56c1 "handinh3058.cybersoft.vn" "" ""
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.117 b82a72aed644 "hanguyen2271.cybersoft.vn" "" "BOTH"
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Add reservedip 172.18.10.121 c48e8f7d2057 "anhpham2629.cybersoft.vn" "" "BOTH"
+Dhcp Server \\PHUQUOC.cybersoft.vn v4 Scope 172.18.10.0 Set NameProtection enable= 0
+Dhcp Server \\PHUQUOC.cybersoft.vn Scope 172.18.10.0 Set DnsConfig 1 1 1 0
+
+   # ======================================================================
+   #  End   Add ReservedIp to the Scope : 172.18.10.0, Server : PHUQUOC.cybersoft.vn            
+   # ======================================================================
+
